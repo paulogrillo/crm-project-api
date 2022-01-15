@@ -45,22 +45,7 @@ public class Employee {
 	@NotNull(message = "O atributo remuneração é obrigatório!")
 	@Size(min = 8, max = 80)
 	private BigDecimal remunerationEmployee;
-	
-	
 
-	public Employee(long id, @NotNull(message = "O nome é obrigatório!") @Size(min = 3, max = 15) String nameEmployee,
-			@NotNull(message = "O atributo email é obrigatório!") @Email(message = "O atributo email deve ser um email válido!") @Size(min = 3, max = 40) String emailEmployee,
-			@NotNull(message = "O atributo telefone é obrigatório!") @Size(min = 8, max = 20) String telEmployee,
-			@NotNull(message = "O atributo avatar é obrigatório!") @Size(min = 8, max = 80) String avatarEmployee,
-			@NotNull(message = "O atributo remuneração é obrigatório!") @Size(min = 8, max = 80) BigDecimal remunerationEmployee) {
-		super();
-		this.id = id;
-		this.nameEmployee = nameEmployee;
-		this.emailEmployee = emailEmployee;
-		this.telEmployee = telEmployee;
-		this.avatarEmployee = avatarEmployee;
-		this.remunerationEmployee = remunerationEmployee;
-	}
 
 	public long getId() {
 		return id;
