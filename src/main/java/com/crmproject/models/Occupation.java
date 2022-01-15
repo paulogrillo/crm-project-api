@@ -21,5 +21,21 @@ public class Occupation {
 	@NotNull(message = "O nome do cargo é obrigatório!")
 	@Size(min = 3, max = 15)
 	private String nameOccupation;
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String getNameOccupation() {
+		return nameOccupation;
+	}
+
+	public void setNameOccupation(String nameOccupation) {
+		this.nameOccupation = nameOccupation;
+	}
 	
 }
