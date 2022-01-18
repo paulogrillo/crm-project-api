@@ -10,14 +10,16 @@ import org.springframework.web.servlet.ModelAndView;
 
 @SpringBootApplication
 @RestController
-/* @RequestMapping("/") */
+@RequestMapping("/")
 public class CrmprojectApplication {
 
 	
-	/*
-	 * @GetMapping public ModelAndView swaggerUi() { return new
-	 * ModelAndView("redirect:/swagger-ui/"); }
-	 */
+	
+	@GetMapping
+	public ModelAndView swaggerUi() {
+		return new ModelAndView("redirect:/swagger-ui/");
+	}
+	 
 	public static void main(String[] args) {
 		SpringApplication.run(CrmprojectApplication.class, args);
 	}
