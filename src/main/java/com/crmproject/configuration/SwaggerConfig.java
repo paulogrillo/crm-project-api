@@ -33,14 +33,12 @@ public class SwaggerConfig {
 
 	public static ApiInfo metadata() {
 
-		return new ApiInfoBuilder().title("API - Gen60plus").description("Projeto API Spring - Gen60plus")
-				.version("1.0.0").license("Apache License Version 2.0").licenseUrl("https://github.com/devgen21")
-				.contact(contact()).build();
+		return new ApiInfoBuilder().title("API - CRM").description("Projeto API Spring - CRM").contact(contact()).build();
 	}
 
 	private static Contact contact() {
 
-		return new Contact("Equipe Gen60 ", "https://github.com/devgen21", "geracao60plus@gmail.com");
+		return new Contact("CRM ", "https://github.com/paulogrillo/crm-project-api", "paulogrillo.contato@gmail.com");
 	}
 
 	private static List<Response> responseMessage() {
