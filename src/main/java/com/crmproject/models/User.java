@@ -8,6 +8,9 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
+
+
+
 @Entity
 @Table(name = "tb_user")
 public class User {
