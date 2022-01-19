@@ -10,7 +10,9 @@ import com.crmproject.models.Client;
 @Repository
 public interface ClientRepository extends JpaRepository<Client, Long> {
 	
-	 List<Client> findAllByNameClientContainingIgnoreCase(long nameClient);
+	 List<Client> findAllByNameClientContainingIgnoreCase(String nameClient);
+	 List<Client> findAllById(long id);
+
 
 	
 }
